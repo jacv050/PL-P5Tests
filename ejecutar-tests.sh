@@ -10,3 +10,6 @@ cd ..
 
 rm PL-P5Tests/plp5.*
 rm PL-P5Tests/comun.h
+rm PL-P5Tests/lex.*
+rm PL-P5Tests/m2r
+rm PL-P5Tests/plp5
