@@ -1,0 +1,9 @@
+program d;
+var b:array [0..2] of array [0..2] of integer;
+
+begin
+	b[0,1] := 14;
+	
+	write(b[0,1])
+
+end.

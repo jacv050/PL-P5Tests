@@ -1,0 +1,15 @@
+program d;
+var b:array [0..2] of array [0..2] of integer;
+
+begin
+	b[0,1] := 14;
+	b[1,0] := 2;
+	b[1,1] := b[0,1] dIv b[1,0];
+	b[0,0] := b[1,0] * B[1,1];
+	
+	writeln(b[0,0]);
+	writeln(b[0,1]);
+	writeln(b[1,0]);
+	writeln(b[1,1])
+
+end.
