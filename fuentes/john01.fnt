@@ -1,0 +1,10 @@
+program d;
+
+var a:INTEGER;
+
+begin
+    read(a);       (*Entrada: 1*)
+
+	write(a)
+
+end.

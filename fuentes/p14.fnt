@@ -1,0 +1,41 @@
+program prueba;
+var
+    a,b:array [0..1] of array [0..1] of Integer;
+    i:Integer;
+    j:Integer;
+    diferencia:Integer;
+begin
+  i := 0;
+  while i<=1 do
+   begin
+    j := 0;
+    while j<=1 do
+     begin
+      a[i,j] := 0;
+      j := j+1
+     end;
+    i := i+1
+   end;
+
+  i := 0;
+  while i<=1 do
+   begin
+    read(b[i,0],b[i,1]);    (* La entrada es:  2 3 -4 5  *)
+    i := i+1
+   end;
+
+  diferencia := 0;
+  i := 0;
+  while i<=1 do
+   begin
+    j := 0;
+    while j<=1 do
+     begin
+      diferencia := diferencia+(a[i,j]-b[j,i]);
+      j := j+1
+     end;
+    i := i+1
+   end;
+
+  writeln(diferencia)     (* Salida: -6 *)
+end.

@@ -1,0 +1,10 @@
+program qeq;
+
+var a,b,c:INTEGER;
+    d,e,f:REAL;
+
+BEGIN
+      IF a <  d AND b + * 7 < 5    
+        (* Error (7:17): el operando izquierdo de 'AND' debe ser booleano. *)
+
+END.

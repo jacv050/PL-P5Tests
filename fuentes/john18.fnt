@@ -1,0 +1,13 @@
+program d;
+var b:integer;
+
+begin
+	b := 0;
+	
+	while (b < 5) do
+		begin
+			b := b + 1;
+			write(1)
+		end
+
+end.

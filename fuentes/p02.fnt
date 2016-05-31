@@ -1,0 +1,18 @@
+program b;
+var a,b,c:Integer;
+    entrada:inTEGER;
+    c1,c2,c3:CHAR;
+begin
+    read(entrada);       (* Entrada: 132 *)
+
+    a := entrada div 100;            (* a = 1 *)
+    b := (entrada - 100*a) div 10;   (* b = 3 *)
+    c := entrada mod (100*a+10*b);   (* c = 2 *)
+    
+    c1 := chr(2048+a+ord('0'));
+    c2 := chr(b+48);
+    c3 := chr(c+47+ord(TRUE));
+
+    write(c1);
+    writeln(c2,c3)   (* Salida: 132 *)
+end.

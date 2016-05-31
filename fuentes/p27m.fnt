@@ -1,0 +1,15 @@
+program agotaMem;
+var
+   a,b,c,d,e,
+   f,g,h,i,j,
+   k,l,m,n,o,       (* Error (6:15): la variable 'k' no cabe en memoria. *)
+   p,q,r,s,t  : array [1..100] of array [1..5] of array[3..4] of Integer;
+
+begin
+
+      (* NOTA: la variable en la que falle (y su línea y columna) dependen
+          de cada implementación. Puesto que cada array ocupa 1000 posiciones
+          la variable 'q' seguro que no cabe, aunque puede ser alguna de
+         las anteriores. *)
+
+end.

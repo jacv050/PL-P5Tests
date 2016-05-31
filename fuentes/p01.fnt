@@ -1,0 +1,29 @@
+program a;
+var a:InTeGEr;
+var b,c8h:rEAL;
+    das7asd,e,f:intEGer;
+    g7,h8,i9,J10:ChaR;
+var aa:Boolean;
+    bb,cc,dd,ee,ff,gg,hh:Real;
+    zzz:Boolean;
+
+begin
+  begin
+     Aa:=FALSE;
+     IF NOT aA AND true then
+       begin
+          read(a,BB,G7,aa,zzz); (* Entrada: 214 0.344 dtr *)
+
+          if aa AND zzz then
+             cc := 1000.0 * bb
+          else if aa then
+             cc := 100 * bB
+          else CC := 33;
+          f := trunc( cc  + a  -200+ord(g7)-ord('a')); 
+                     (* 34.4+ 214-200+100    -97      = 52 *)
+          i9 := chr(f); (* ASCII 52 -> '3' *)
+
+          writeln(i9)    (* Salida: 3 *)
+       end
+  end
+end.

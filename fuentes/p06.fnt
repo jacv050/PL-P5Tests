@@ -1,0 +1,24 @@
+program c2p3Pub05;
+var
+   a,b,suma,i:Integer;
+   EsPrimo:Boolean;
+begin
+  suma := 0;
+  read(a);           (* Entrada : "9" *)
+  b := 1;
+  while b<=a do
+   begin
+    i := b-1;
+    EsPrimo := True;
+    while EsPrimo AND (i>1) do
+      if i*(b DIV i)=b then
+        EsPrimo := False
+      else
+        i := i-1;
+    a := a+2-2;
+    if EsPrimo then
+      suma := suma+b;
+    b := b+1
+   end;
+  writeln(suma)      (* debe salir "18" *)
+end.

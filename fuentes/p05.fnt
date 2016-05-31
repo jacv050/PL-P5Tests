@@ -1,0 +1,14 @@
+PROGRAM prueba;
+VAR a,b: Integer;
+    c,d: REAL;
+    e,prueba: boolean;
+    ca : char;
+    
+BEGIN
+    a := 5;
+    ca := chr(1024+65);
+    b := ord(ca);
+
+    writeln(b)   (* Salida: 65  *)
+END.
+        

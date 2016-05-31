@@ -1,0 +1,7 @@
+program k7;
+var
+    l,m:integer;
+begin
+      l := 23*7+ord(2/3)  
+        (* Error (5:17): el parámetro de 'ord' debe ser entero, booleano o carácter. *)
+end.

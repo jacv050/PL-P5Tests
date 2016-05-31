@@ -1,0 +1,43 @@
+
+program prueba;
+var
+   primos:array [1..100] of Integer;
+   entrada,i,cprimo:Integer;
+   suma:Integer;
+var
+   num,anterior:Integer;
+   esdivisible:Boolean;
+begin
+   read(entrada);   (* Entrada:   45 *)
+
+   cprimo := 1;
+   while entrada>0 do
+    begin
+     esdivisible := False;
+     num := entrada;
+     anterior := num-1;
+     while ((NOT esdivisible)) AND ((anterior>1)) do
+      if num div anterior*anterior=num then
+       esdivisible := True
+      else
+       anterior := anterior-1;
+
+     if NOT esdivisible then
+      begin
+        primos[cprimo] := entrada;
+        cprimo := cprimo+1
+      end;
+     entrada := entrada-1
+    end;
+
+   i := 1;
+   suma := 0;
+
+   while i<cprimo do
+    begin
+     suma := suma+primos[i*7 div 7];
+     i := i+1
+    end;
+
+   writeln(suma)   (* Salida: 282 *)
+end.

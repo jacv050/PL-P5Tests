@@ -1,0 +1,48 @@
+
+program prueba;
+var
+   i:Integer;
+   j:Integer;
+   k:Integer;
+   a:array [100..102] of array [0..2] of array [1000..1003] of Integer;
+   n:Integer;
+begin
+  n := 0;
+  i := 100;
+  while i<103 do
+   begin
+    j := 0;
+    while j<3 do
+     begin
+      k := 1000;
+      while k<1004 do
+       begin
+        a[i,j,k] := n;
+        n := n+1;
+        k := k+1
+       end;
+      j := j+1
+     end;
+    i := i+1
+   end;
+
+  n := 0;
+  i := 100;
+  while i<103 do
+   begin
+    j := 0;
+    while j<3 do
+     begin
+      k := 1000;
+      while k<1004 do
+       begin
+        n := n+a[i,j,k];
+        k := k+1
+       end;
+      j := j+1
+     end;
+    i := i+1
+   end;
+
+  writeln(n) (* Salida: 630 *)
+end.

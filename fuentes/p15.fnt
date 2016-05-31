@@ -1,0 +1,131 @@
+program prueba;
+var
+  MaxColFich:Integer;
+  ncol:Integer;
+  nx:Integer;
+  sumamedias,impr:Real;
+
+  avaval:array [0..8] of array [0..16] of array [0..18] of Real;
+  avmedia:array [0..8] of array [0..16] of Real;
+  avvalor,avnval:array [0..18] of Integer;
+  err:array [0..18] of Real;
+
+  cuantos,i,j,value,ccol:Integer;
+  i1,j1,k1:Integer;
+  salir:Boolean;
+
+  i2:Integer;
+  j2:Integer;
+  k2:Integer;
+begin
+  impr := 0.5;
+  begin
+   sumamedias := 0.0;
+   nx := 0;
+   ncol := -1
+  end;
+
+  begin
+   read(cuantos);
+   read(MaxColFich);
+   i := 1;
+   while i<=cuantos do
+    begin
+     begin
+      read(value);
+      ccol := 0;
+      j := 1;
+      while j<=MaxColFich do
+       begin
+        read(err[ccol]);
+        ccol := ccol+1;
+        j := j+1
+       end;
+
+      if ncol<1 then
+         ncol := ccol;
+
+      begin
+       i1 := 0;
+       salir := False;
+       while (NOT salir) AND (i1<nx) do
+        if avvalor[i1]=value then
+         begin
+          k1 := i1;
+          salir := True
+         end
+        else
+         i1 := i1+1;
+
+       if i1>=nx then
+        begin
+         nx := nx+1;
+         avnval[i1] := 0;
+         avvalor[i1] := value
+        end
+       else
+        i1 := k1;
+
+       j1 := 0;
+       while j1<=ncol-1 do
+        begin
+         avaval[i1,avnval[i1],j1] := err[j1];
+         j1 := j1+1
+        end;
+       avnval[i1] := avnval[i1]+1
+      end
+     end;
+     i := i+1
+    end
+  end;
+
+  begin
+   i2 := 0;
+   while i2<=nx-1 do
+    begin
+     begin
+      k2 := 0;
+      while k2<=ncol-1 do
+       begin
+        avmedia[i2,k2] := 0.0;
+        k2 := k2+1
+       end;
+
+      k2 := 0;
+      while k2<=ncol-1 do
+       begin
+        begin
+         j2 := 0;
+         while j2<=avnval[i2]-1 do
+          begin
+           avmedia[i2,k2] := avmedia[i2,k2]+avaval[i2,j2,k2];
+           j2 := j2+1
+          end;
+         avmedia[i2,k2] := avmedia[i2,k2]/avnval[i2]
+        end;
+        k2 := k2+1
+       end
+     end;
+     i2 := i2+1
+    end;
+
+   sumamedias := 0.0;
+   i2 := 0;
+   while i2<=nx-1 do
+    begin
+     begin
+      sumamedias := sumamedias+avvalor[i2];
+      k2 := 0;
+      while k2<=ncol-1 do
+       begin
+        sumamedias := sumamedias+avmedia[i2,k2];
+        k2 := k2+1
+       end
+     end;
+     i2 := i2+1
+    end
+  end;
+
+  impr := sumamedias;
+  writeln(impr)   (*  Salida: 24581.260 *)
+end.

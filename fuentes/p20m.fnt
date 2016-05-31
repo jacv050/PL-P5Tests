@@ -1,0 +1,5 @@
+program pepito;
+var pepito,juanito,pedrito:Real;
+    vardecl2veces,b,c,d,vardecl2veces,f,
+        b,vardecl2veces,c,vardecl2veces,d:Real;  
+     (* Error (3:25): variable 'vardecl2veces' ya declarada. *)

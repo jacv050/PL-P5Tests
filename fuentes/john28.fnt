@@ -1,0 +1,9 @@
+program d;
+var b:integer;
+
+begin
+	b := ord(106);
+	
+	write(b)
+
+end.

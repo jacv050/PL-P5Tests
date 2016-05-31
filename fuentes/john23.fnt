@@ -1,0 +1,8 @@
+program d;
+var b:real;
+
+begin
+	b := 11111.11;
+	write(trunc(b))
+
+end.

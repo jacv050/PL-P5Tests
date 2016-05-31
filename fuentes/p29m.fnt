@@ -1,0 +1,8 @@
+
+program prueba;
+var a:Integer;
+    b:array [4..37] of array [2..3] of Char;
+begin
+    a[7] := 5    (* Error (6:6): la variable no es un array. *)
+                 (*  (también podría ser en la 6:5)          *)
+end.

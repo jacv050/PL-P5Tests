@@ -1,0 +1,8 @@
+  (* Comentario con
+       varias líneas
+
+
+
+   *)
+
+program %progr$  (* Error (8:9): carácter '%' incorrecto. *)

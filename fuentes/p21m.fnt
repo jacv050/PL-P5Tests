@@ -1,0 +1,6 @@
+program p;
+var a:integer;
+    b:real;
+begin
+  a := b    (* Error (5:5): la expresión a la derecha de ':=' debe ser entera. *)
+end.

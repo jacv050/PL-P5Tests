@@ -1,0 +1,8 @@
+program programita;
+
+var variable:integer;
+
+begin
+      if ('a' > 97) and THEN
+         (* Error (6:15): el operando derecho de '>' debe ser de tipo carácter. *)
+end.

@@ -1,0 +1,12 @@
+
+
+program c2p3Pub07;
+var
+  a,b,mcd,sig:Integer;
+  salir:Boolean;
+begin
+  salir := False;
+  read(a);         (* Entrada: "27" *)
+  b := a DIV 3*2;  (* b = 18 *)
+  writeln(b)   (* debe salir "18" *)
+end.

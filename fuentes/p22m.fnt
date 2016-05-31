@@ -1,0 +1,9 @@
+ProGraM q3a;
+VAR 
+    a:INTEGER;
+
+BEGIN
+    READ(a);
+    IF a THEN      (* Error (7:5): la expresión del 'IF' debe ser booleana. *)
+        WRITELN(a,)
+END.

@@ -1,0 +1,45 @@
+
+program prueba;
+var
+   a:array [0..3] of array [0..2] of array [0..2] of Integer;
+   i:Integer;
+   j:Integer;
+   k:Integer;
+   b:array [0..3] of array [0..2] of array [0..2] of Integer;
+begin
+   i := 0;
+   while i<4 do
+    begin
+     j := 0;
+     while (j<=3) AND (j<>3) do
+      begin
+       k := 0;
+       while (((k<3) OR (k=3))) AND (k<>3) do
+        begin
+         a[i,j,k] := 7;
+         k := k+1
+        end;
+       j := j+7div 7
+      end;
+     i := i*0+1+i
+    end;
+
+   i := 0;
+   while i<4 do
+    begin
+     j := 0;
+     while (j<=3) AND (j<>3) do
+      begin
+       k := 0;
+       while (((k<3) OR (k=3))) AND (k<>3) do
+        begin
+         b[i,j,k] := ord((a[i,j,k]=7));
+         k := k+1
+        end;
+       j := j+1
+      end;
+     i := i*0+1+i
+    end;
+
+   writeln(i+j+k)     (* Salida: 10 *)
+end.

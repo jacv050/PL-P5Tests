@@ -1,0 +1,4 @@
+program prgrm;
+begin
+     prgrm := 7   (* Error (3:6): variable 'prgrm' no declarada. *)
+end.

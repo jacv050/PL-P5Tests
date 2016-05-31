@@ -1,0 +1,6 @@
+program p;
+var g,h,i,j,k,l:boolean;
+begin
+    writeln(chr(j),i,;
+            (* Error (4:13): el parámetro de 'chr' debe ser de tipo entero. *)
+end;

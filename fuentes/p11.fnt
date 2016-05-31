@@ -1,0 +1,38 @@
+program prueba;
+var
+ y:array [0..9] of array [0..9] of array [0..14] of Integer;
+ vector:array [0..14] of array [0..9] of Integer;
+ v:array [0..19] of Integer;
+ i:Integer;
+ j:Integer;
+ k:Integer;
+begin
+ i := 0;
+ while i<20 do
+  begin
+   v[i] := i;
+   i := i+1
+  end;
+ i := 0;
+ while i<10 do
+   begin
+    j := 0;
+    while j<10 do
+     begin
+      k := 0;
+      while k<15 do
+       begin
+        y[i,j,k] := i+j+k;
+        k := k+1
+       end;
+      j := j+1
+     end;
+    i := i+1
+   end;
+  vector[y[y[0,1,2],y[2,0,0],1],0] := i;
+  vector[v[0],y[v[1],y[v[1],v[1],v[2]],1]] := j;
+  k := vector[y[y[0,1,2],y[2,0,0],1],0]+
+       vector[v[0],y[v[1],y[v[1],v[1],v[2]],1]];
+
+  writeln(k)  (* Salida: 20 *)
+end.

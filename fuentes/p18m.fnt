@@ -1,0 +1,7 @@
+program id;
+var nint,nfix,addop,mulop:Integer;
+    relop,obool,ybool,nobool:Boolean;
+    ctechar,chr:Char;    (* Error (4:13): no esperaba 'chr'. *)
+    
+begin
+end.

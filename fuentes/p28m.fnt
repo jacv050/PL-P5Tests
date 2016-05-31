@@ -1,0 +1,9 @@
+
+program prueba;
+var a:array [1..1] of array [2..2] of array [3..3] of 
+      array [0..0] of 
+       array [2..1] of  
+(* Error (5:18): el límite superior debe ser mayor o igual que el límite inferior. *)
+      array [0..-1] of Integer;
+begin
+end.

@@ -1,0 +1,11 @@
+program d;
+
+var a:INTEGER;
+var b:REAL;
+
+begin
+    read(a,b);       (*Entrada: 1 1.4*)
+
+	write(a,b)
+
+end.

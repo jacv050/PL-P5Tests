@@ -1,0 +1,14 @@
+program d;
+var t,r,u,e:char;
+
+begin
+
+	t := 't';
+	r := 'r';
+	u := 'u';
+	e := 'e';
+	
+	if (tRue) then
+		write(t,r,u,e)
+
+end.

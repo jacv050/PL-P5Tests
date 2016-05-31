@@ -1,0 +1,13 @@
+
+
+program c2p3Pub07;
+var
+   a:array [0..3] of array [0..2] of array [0..2] of Integer;
+   
+begin
+  a[0,0,0] := 1;
+  a[1, 0, 2] := 4;
+  a[1, 1,1] := 4;
+  a[1,2,1] := a[0,0,0]+a[1,0,2]+a[1,1,1];
+  write(a[1,2,1])
+end.

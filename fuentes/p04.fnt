@@ -1,0 +1,15 @@
+program d;
+
+var a,b,c,d,e,f,g,h:REAL;
+    i,j,k,l,m,n:INTEGER;
+    o,p,q,r,s,t,u,v:CHAR;
+    w,x,y,z : BOOLEAN;
+
+begin
+    read(a,i,o,w);         (* Entrada: 12.34 456 't  *)
+
+    if (ord(o) = 39) or (chr(39) = o) then
+       b := a + i/100;
+
+    writeln(b)             (* Salida: 16.900 *)
+end.

@@ -1,0 +1,7 @@
+
+program prueba;
+var a:Integer;
+    b:array [2..3] of array [6..10] of Integer;
+begin
+    b[40] := 7   (* Error (6:9): faltan índices. *)
+end.

@@ -1,0 +1,16 @@
+program d;
+var b,c:integer;
+
+begin
+	b := 5;
+	c := 1;
+	
+	while (b = 5) do
+		begin
+			if (c = 5) then
+				b := 6;
+			c := c + 1;
+			write(1)
+		end
+
+end.

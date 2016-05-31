@@ -1,0 +1,16 @@
+program c2p3Pub06;
+var
+  a,b:Integer;
+begin
+  read(a);           (* Entrada: "7" *)
+  b := 0;
+  if a<100 then
+   if a>1 then
+     if a<=7 then
+       if a>=7 then
+         if a<>7 then
+           b := 7
+         else
+           b := 8;
+  writeln(b)         (* debe salir "8" *)
+end.

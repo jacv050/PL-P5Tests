@@ -1,0 +1,13 @@
+program c;
+var r:real;
+    c:CHAR;
+    b1,b2:BOOLEAN;
+
+begin
+   c := '\n';
+   r := -ord(c) - ord('\0') - ord('\\');
+   if r = -102 then
+      b1 := true;
+   b2 := r <> -102.0;
+   writeln(b1,b2)     (* Salida: tf *)
+end.

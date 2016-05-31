@@ -1,0 +1,5 @@
+program d;
+begin
+
+	write(2.0*4.0)
+end.

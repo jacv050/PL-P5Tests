@@ -1,0 +1,5 @@
+program p;
+var a:array[5..6] of Real;
+begin
+   a[5.5] := 7.0  (* Error (4:5): el índice del array debe ser de tipo entero. *)
+end.

@@ -1,0 +1,7 @@
+
+program prueba;
+var a:Integer;
+    b:array [1..22] of array [0..1] of Integer;
+begin
+    a := 7 + b[25,7,0,(8*3+*5)]  (* Error (6:20): sobran índices. *)
+end.
