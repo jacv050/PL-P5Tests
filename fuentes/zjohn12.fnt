@@ -1,5 +1,0 @@
-program d;
-begin
-
-	write(4 div 2)
-end.

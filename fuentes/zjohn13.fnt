@@ -1,8 +1,0 @@
-program d;
-
-begin
-
-	if (tRue) then
-		write('t','r','u','e')
-
-end.

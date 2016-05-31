@@ -1,9 +1,0 @@
-program d;
-var b:integer;
-
-begin
-	b := ord(false);
-	
-	write(b)
-
-end.
