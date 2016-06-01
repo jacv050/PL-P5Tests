@@ -1,0 +1,8 @@
+program d;
+var b:array [0..2] of array [0..2] of integer;
+var a:integer;
+
+begin
+  writeln(true and 12.3)
+
+end.
