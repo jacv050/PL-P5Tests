@@ -1,5 +1,6 @@
 *~
-salida-obtenida
+salida-obtenida/*
+!salida-obtenida/INFO.txt
 plp5
 plp5.*
 comun.h
