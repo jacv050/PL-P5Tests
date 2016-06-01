@@ -1,0 +1,9 @@
+program d;
+var b:array [0..2] of array [0..2] of integer;
+var a:boolean;
+
+begin
+
+  a := 4.5
+
+end.
