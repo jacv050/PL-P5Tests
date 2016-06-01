@@ -1,0 +1,12 @@
+program d;
+var b:array [0..2] of array [0..2] of integer;
+var a:boolean;
+
+begin
+
+  if ( true or 'a')
+  	writeln(1);
+  	
+  writeln(0);
+
+end.
