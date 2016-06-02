@@ -1,0 +1,37 @@
+(* 
+	En esta prueba asignaremos una constante char a una
+	variable de tipo char, e imprimiremos esta variable,
+	obteniendo por pantalla el caracter escrito anteriormente.
+
+	Las reglas probadas son:
+
+	S --> program id pyc BDecl Bloque punto
+
+	BDecl --> BlVar BDecl
+	BlVar --> var Decl pyc
+	Decl --> DVar
+	DVar --> LIdent dosp Tipo
+	LIdent --> id
+	Tipo --> TipoSimple
+
+	Bloque --> begin SeqInstr end
+	SeqInstr --> Instr
+
+	Instr --> wri lpar LExpr rpar
+	LExpr --> Expr
+	Expr --> Esimple
+	ESimple --> Term
+	Term --> Factor
+	Factor --> ctechar
+
+*)
+
+program c;
+var r:real;
+    c:CHAR;
+    b1,b2:BOOLEAN;
+
+begin
+   c := 'a';
+   writeln(c)     (* Salida: 'a' *)
+end.

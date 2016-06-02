@@ -1,0 +1,18 @@
+(* 
+	En esta prueba probaremos a leer e imprimir booleanos
+
+*)
+
+program c;
+var b1,b2,b3,b4:BOOLEAN;
+
+begin
+   b1 := false;
+   b2 := true;
+   read(b3,b4); (* 't 'f *)
+   writeln(b1);
+   writeln(b2);
+   writeln(b3);
+   writeln(b4)
+   
+end.

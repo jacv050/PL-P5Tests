@@ -1,0 +1,19 @@
+(* 
+	En esta prueba probaremos a utilizar los booleanos leídos de fichero
+	en condicionales
+
+*)
+
+program c;
+var b1,b2 :BOOLEAN;
+
+begin
+   read(b1,b2); (* 't 'f *)
+   
+   if(b1) then
+   	writeln(b1);
+   
+   if(not b2) then
+   	writeln(b2)
+   	
+end.

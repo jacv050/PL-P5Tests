@@ -1,0 +1,12 @@
+program d;
+
+var a,c:REAL;
+    b:INTEGER;
+
+begin
+	a := 12.34;
+	b := 456;
+    c := a + b/100;
+
+    writeln(c)             (* Salida: 16.900 *)
+end.

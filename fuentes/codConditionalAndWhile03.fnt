@@ -1,0 +1,31 @@
+(* 
+	En esta prueba, en la ultima condicion del if, hacemos un while
+	de forma que cada vez que la variable d sea divisble entre 2, aumente
+	c en 1.
+*)
+
+program c;
+var r:array [5..10] of array [20..22] of real;
+    c,d:integer;
+    b1,b2:BOOLEAN;
+
+begin
+   d := 0;
+   c := 0;
+   b1 := false;
+   b2 := true;
+   if(b1 = true) then
+   	writeln(b2)
+   else if(b1 = true) then
+	writeln(b2)
+   else
+	while d < 5 do
+	 begin
+	  if d div 2 = 0 then
+		c := c + 1
+	  else
+		c := c + 2;
+	  d := d + 1
+	 end;
+   writeln(c)
+end.

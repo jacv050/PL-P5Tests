@@ -1,0 +1,16 @@
+(* 
+	En esta prueba asignaremos una constante integer a un
+	array de tipo integer, e imprimiremos esta variable,
+	obteniendo por pantalla el caracter escrito anteriormente.
+
+*)
+
+program c;
+var r:array [5..10] of array [20..22] of integer;
+    c:integer;
+    b1,b2:BOOLEAN;
+
+begin
+   r[5,20] := 1;
+   writeln(r[5,20])     (* Salida: 1 *)
+end.
